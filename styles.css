@@ -1,0 +1,317 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+   background-color: #BFBBAF;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    position: sticky;
+    z-index: 1;
+    right: 0;
+    left: 0;
+    top: 0;
+    padding-top: 10px;
+    background-color: gray;
+}
+nav a {
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
+}
+nav a:hover {
+    color: white;
+    transform: scale(1,2);
+}
+nav a:hover::after {
+    width: 100%;
+    left: 0;
+}
+.head {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 20px;
+}
+.header {
+    color: black;
+    font-size: 60px;
+    text-shadow: 2px 2px 5px black;
+}
+.heading h2 {
+    text-align: center;
+}
+.home-image img {
+    width: 870px;
+    height: 500px;
+    margin-right: 5px;
+    margin-left: 10px;
+    border: 4px solid lavender;
+    border-radius: 20px;
+}
+.welcome {
+    display: flex;
+    justify-content: center;
+}
+.welcome img {
+    width: 150px;
+    height: 150px;
+    margin-top: 30px;
+    margin-left: 300px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px;
+}
+.container {
+    width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    box-shadow: 0 0 20px;
+    border-radius: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+footer {
+    background-color: #BFBBAF;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px 4px gold;
+    font-weight: 500;
+    font-size: 20px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.contact {
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    box-shadow: 0 0 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-radius: 40px;
+    font-weight: 700;
+    color: rgba(23, 31, 5, 0.911);
+    text-shadow: 2px 2px 15px black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contact h1 {
+    color: #2F9CF4;
+    font-size: 50px;
+    text-shadow: 1px 4px 15px black;
+    text-align: center;
+}
+label {
+    display: block;
+    padding: 10px;
+}
+input[type="text"] {
+    width: 100%;
+    height: 50px;
+    font-size: 15px;
+    border-radius: 99px;
+    transition: 0.3s;
+    border: none;
+}
+input[type="email"] {
+    width: 100%;
+    height: 50px;
+    font-size: 15px;
+    border-radius: 99px;
+    transition: 0.3s;
+    border: none;
+}
+textarea {
+    width: 100%;
+    height: 50px;
+    border-radius: 99px;
+    transition: 0.3s;
+}
+button {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    font-size: 16px;
+    background: #2F9CF4;
+    font-weight: 600;
+    color: white;
+    border-radius: 99px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.confirm {
+    width: 900px;
+    padding-top: 25px;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    background-color: #BFBBAF;
+}
+.story-container {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 20px;
+    margin-top: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+.story-header {
+    text-transform: capitalize;
+    padding-top: 10px;
+    margin-left: 220px;
+}
+.story-box {
+    width: 400px;
+    height: 400px;
+    text-shadow: 2px 2px 40px black;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(44, 56, 59);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    padding: 10px;
+    border: 4px solid gray;
+    border-radius: 10px;
+    box-shadow: 0 0 5px;
+}
+.story-box h2 {
+    color: rgb(3, 116, 150);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+.gallery {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    box-shadow: 0 0 20px;
+    border-radius: 20px;
+}
+.gallery img {
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+}
+.gallery-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    position: relative;
+}
+.gallery-heading {
+    text-align: center;
+    padding-top: 5px;
+}
+.images {
+    justify-content: center;
+    position: relative;
+}
+.images img {
+    box-shadow: 0 0 20px;
+}
+.related-sentence {
+    color: black;
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+    visibility: hidden;
+    position: absolute;
+    bottom: 150px;
+    top: 80px;
+}
+.images img:hover {
+    background-color:rgb(2, 46, 59);
+    opacity: 0.3;
+}
+.images .related-sentence {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, top 0.5s ease-in-out;
+}
+.images:hover .related-sentence {
+    visibility: visible;
+    width: 80%;
+    opacity: 1;
+    top: 50%;
+}
+.video-container {
+    display: flex;
+    justify-content: center;
+    width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 0 0 20px;
+    border: 5px solid gray;
+    margin-top: 20px;
+}
+.videa-container iframe {
+    width: 50px;
+    height: 50px;
+}
+.youtube {
+    text-align: center;
+}
+.history {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.history-of-education h1 {
+    text-align: center;
+}
+.history-of-education img {
+    width: 850px;
+    height: 400px;
+    padding: 10px;
+    margin-left: 8px;
+    border-radius: 20px;
+    border: 3px solid silver;
+}
+.history img {
+    width: 300px;
+    height: 300px;
+    border-radius: 400px;
+    box-shadow: 0 0 20px;
+    margin: 10px;
+    padding: 5px;
+}
+.container h1 {
+    text-align: center;
+    padding: 10px;
+}
+.about {
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    margin: 5px;
+    font-weight: 500;
+}
+.about-image img {
+    width: 400px;
+    height: 380px;
+    margin-top: 50px;
+    border: 5px solid lavender;
+    border-radius: 50%;
+    box-shadow: 0 0 10px;
+}
